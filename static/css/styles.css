@@ -1,0 +1,263 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #000000;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color:#871717;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color:rgb(189, 189, 189);
+  color: rgb(0, 0, 0);
+}
+
+
+.white-section {
+  background-color: #fff;
+  
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-light .navbar-brand {
+color: #871717;
+font-family: 'Shadows Into Light', cursive;
+font-size: 4.5rem;
+font-weight: bold;
+}
+
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  font-family: "Montserrat-Light";
+  
+  
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.go-button { 
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+/* Title Section */
+
+
+
+#title {
+  /* background-color: #fff; */
+
+  color: rgb(136, 63, 63);
+  text-align: left;
+
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+  
+}
+
+
+/* Features Section */
+
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.9rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #871717;
+  margin-bottom: 1rem;
+  /* animation properties */
+}
+@keyframes my-animation {
+  from {    
+    top: 0px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+
+.icon:hover {
+  color: #ffffff;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+ 
+  position: relative;
+  
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #fff;
+  
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23871717' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23871717' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#portfolio {
+  background-color: #fff;
+  padding-bottom: 3%;
+  
+}
+
+@keyframes crescendo {
+  0%   {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
+
+.photo:hover{
+  animation: crescendo 0.5s alternate ease-in;
+  animation-fill-mode: forwards;
+  
+}
+
+.photo {
+  width: 100%;
+  height: 75%;
+  border-radius: 100%;
+  margin: 10%;
+}
+
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+
+}
+
+.section-heading i {
+  color:#871717
+}
+
+
+.pricing-icon{
+  color:rgb(127, 159, 255);
+}
+
+
+#pricing .card-body p{
+  text-align: left;
+}
+
+
+.price-text {
+  font-size: 3rem;
+  color: #871717;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+  
+}
+
+/* CTA Section */
+#cta h3{
+  color: #871717;
+}
+.cta-img {
+  width: 70%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
