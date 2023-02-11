@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%include 'header.html'%}
+    <title>Відгуки</title>
+</head>
+<body>
+
+{% include 'nav.html' %}
+
+<section class="white-section " id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Постійно роблю татуювання в даного майстра. Робота виконана дуже якісно. Дякую #Chizh Tatoo</h2>
+          <img class="testimonial-image" src="static/images/Dmitriy.jpg" alt="dog-profile">
+          <em>Віхтюк Дмитро, Київ</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Дякую за нові "прикраси" для тіла і душі. Краще за діаманти</h2>
+          <img class="testimonial-image" src="static/images/sara.jpg" alt="lady-profile">
+          <em>Сара, Александрія</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+  {% include 'footer.html' %}
+</body>
+</html>

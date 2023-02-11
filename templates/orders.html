@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%include 'header.html'%}
+    <title>Log in</title>
+</head>
+<body>
+
+  {% include 'nav.html' %}
+  <section class="white-section" id="forms">
+<div class="container-fluid">
+  <form action="{{ url_for('receive_data') }}" method="post">
+  <div class="form-group">
+    <label for="telephone">Ваш телефон:</label>
+    <input name= "tel" type="tel" class="form-control" id="telephone" placeholder="+(380)63-475-65-13">
+  </div>
+  <div class="form-group">
+    <label for="name">Ваше ім'я:</label>
+    <input type="text" class="form-control" id="name" placeholder="Як Вас звати?" name="name">
+  </div>
+  <button type="submit" class="btn btn-primary">OK!</button>
+</form>
+</div>
+  </section>
+  {% include 'footer.html' %}
+</body>
+</html>
